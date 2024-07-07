@@ -3,24 +3,24 @@
   "private": true,
   "scripts": {
     "dev": "turbo dev",
-    "dev:main": "turbo dev --filter=main",
-    "dev:main:android": "turbo dev:android --filter=main",
-    "dev:main:web": "turbo dev:web --filter=main",
-    "dev:showcase": "turbo dev --filter=showcase --concurrency 32",
-    "dev:showcase:android": "turbo dev:android --filter=showcase --concurrency 32",
-    "dev:showcase:web": "turbo dev:web --filter=showcase --concurrency 32",
-    "dev:starter-base": "turbo dev --filter=starter-base",
-    "dev:starter-base:android": "turbo dev:android --filter=starter-base",
-    "dev:starter-base:web": "turbo dev:web --filter=starter-base",
+    "dev:main": "turbo dev --filter=@wcpos/main",
+    "dev:main:android": "turbo dev:android --filter=@wcpos/main",
+    "dev:main:web": "turbo dev:web --filter=@wcpos/main",
+    "dev:showcase": "turbo dev --filter=@wcpos/showcase --concurrency 32",
+    "dev:showcase:android": "turbo dev:android --filter=@wcpos/showcase --concurrency 32",
+    "dev:showcase:web": "turbo dev:web --filter=@wcpos/showcase --concurrency 32",
+    "dev:starter-base": "turbo dev --filter=@wcpos/starter-base",
+    "dev:starter-base:android": "turbo dev:android --filter=@wcpos/starter-base",
+    "dev:starter-base:web": "turbo dev:web --filter=@wcpos/starter-base",
     "lint": "turbo lint",
     "test": "turbo test",
     "build": "turbo build",
-    "build:showcase": "turbo build --filter=showcase",
+    "build:showcase": "turbo build --filter=@wcpos/showcase",
     "clean": "rm -rf .turbo node_modules && turbo clean"
   },
   "devDependencies": {
-    "turbo": "^1.12.4",
-    "typescript": "^5.3.3"
+    "turbo": "^2.0.6",
+    "typescript": "^5.5.3"
   },
   "pnpm": {
     "peerDependencyRules": {
