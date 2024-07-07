@@ -1,5 +1,8 @@
 name: iOS/Android Preview
 
+defaults:
+  run:
+    working-directory: apps/main
 on:
   push:
     branches:
@@ -36,5 +39,4 @@ jobs:
       - name: 🚀 Create preview
         uses: expo/expo-github-action/preview@v8
         with:
-          working-directory: apps/main
           command: eas update --auto
