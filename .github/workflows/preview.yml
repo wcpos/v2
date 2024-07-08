@@ -3,6 +3,7 @@ name: iOS/Android Preview
 defaults:
   run:
     working-directory: apps/main
+
 on:
   push:
     branches:
@@ -40,3 +41,4 @@ jobs:
         uses: expo/expo-github-action/preview@v8
         with:
           command: eas update --auto
+          working-directory: apps/main
